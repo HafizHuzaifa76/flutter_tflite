@@ -100,7 +100,7 @@ class _MyAppState extends State<MyApp> {
   Future loadModel() async {
     Tflite.close();
     try {
-      String res;
+      String? res;
       switch (_model) {
         case yolo:
           res = await Tflite.loadModel(
